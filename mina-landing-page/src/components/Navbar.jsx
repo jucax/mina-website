@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/logo_login_screen.png';
+import logo from '/assets/logo_login_screen.png';
 
 export default function Navbar({ lang, setLang, t }) {
   const [open, setOpen] = useState(false);

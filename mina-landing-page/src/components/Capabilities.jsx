@@ -1,18 +1,29 @@
 import { useEffect, useRef } from 'react';
 
-const topRow = [
-  { label: 'Listings', icon: '🏠' },
-  { label: 'Chat', icon: '💬' },
-  { label: 'Analytics', icon: '📊' },
-  { label: 'Calendar', icon: '📅' },
-  { label: 'Favorites', icon: '⭐' },
+const icons = [
+  '/icons-capabilities/1.png', // Listing
+  '/icons-capabilities/2.png', // Chat
+  '/icons-capabilities/3.png', // Analytics
+  '/icons-capabilities/4.png', // Proposals
+  '/icons-capabilities/5.png', // Notifications
+  '/icons-capabilities/6.png', // Deals
+  '/icons-capabilities/7.png', // Rent & Sell
+  '/icons-capabilities/8.png', // Promote
+  '/icons-capabilities/9.png', // Fast Contact
+  '/icons-capabilities/10.png', // Security
 ];
-const bottomRow = [
-  { label: 'Notifications', icon: '🔔' },
-  { label: 'Documents', icon: '📄' },
-  { label: 'Payments', icon: '💳' },
-  { label: 'Teams', icon: '👥' },
-  { label: 'Tasks', icon: '✅' },
+
+const features = [
+  { label: 'Instant Listings', desc: 'Showcase your property to thousands instantly.' },
+  { label: 'Direct Chat', desc: 'Connect and negotiate in real time.' },
+  { label: 'Smart Analytics', desc: 'Track your performance and market trends.' },
+  { label: 'Personalized Proposals', desc: 'Send and receive tailored offers.' },
+  { label: 'Real-Time Alerts', desc: 'Never miss an opportunity with instant notifications.' },
+  { label: 'Seamless Deals', desc: 'Close transactions quickly and securely.' },
+  { label: 'Rent & Sell Tools', desc: 'All-in-one tools for every real estate need.' },
+  { label: 'Boost Your Property', desc: 'Promote listings for maximum exposure.' },
+  { label: 'Fast Owner Contact', desc: 'Reach decision-makers directly.' },
+  { label: 'Trusted Security', desc: 'Your data and deals are always protected.' },
 ];
 
 export default function Capabilities() {
@@ -43,23 +54,23 @@ export default function Capabilities() {
   }, []);
 
   return (
-    <section id="capabilities-section" className="w-full bg-green-50 py-12 px-4 flex flex-col items-center">
+    <section id="capabilities-section" className="w-full bg-primary/90 py-12 px-4 flex flex-col items-center">
       <div ref={topRef} className="flex w-full max-w-5xl mx-auto justify-between mb-8 transition-all duration-700 will-change-transform">
-        {topRow.map((c, i) => (
+        {features.slice(0, 5).map((f, i) => (
           <div key={i} className="flex flex-col items-center gap-2">
-            {/* Replace emoji with your own SVG/icon later */}
-            <div className="text-5xl mb-2">{c.icon}</div>
-            <div className="text-primary font-semibold text-sm md:text-base text-center">{c.label}</div>
+            <img src={icons[i]} alt={f.label} className="w-14 h-14 mb-2" />
+            <div className="text-orange-400 font-semibold text-base text-center">{f.label}</div>
+            <div className="text-white text-xs text-center">{f.desc}</div>
           </div>
         ))}
       </div>
-      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center font-mina" data-aos="fade-up">20+ Real Estate Tools</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-orange-400 mb-8 text-center font-mina" data-aos="fade-up">20+ Real Estate Tools</h2>
       <div ref={bottomRef} className="flex w-full max-w-5xl mx-auto justify-between mt-8 transition-all duration-700 will-change-transform">
-        {bottomRow.map((c, i) => (
+        {features.slice(5, 10).map((f, i) => (
           <div key={i} className="flex flex-col items-center gap-2">
-            {/* Replace emoji with your own SVG/icon later */}
-            <div className="text-5xl mb-2">{c.icon}</div>
-            <div className="text-primary font-semibold text-sm md:text-base text-center">{c.label}</div>
+            <img src={icons[i+5]} alt={f.label} className="w-14 h-14 mb-2" />
+            <div className="text-orange-400 font-semibold text-base text-center">{f.label}</div>
+            <div className="text-white text-xs text-center">{f.desc}</div>
           </div>
         ))}
       </div>

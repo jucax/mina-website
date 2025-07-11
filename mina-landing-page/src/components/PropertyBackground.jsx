@@ -1,4 +1,4 @@
-import propertyBg from '../assets/property-bg.jpg';
+import propertyBg from '/assets/property-bg.jpg';
 
 export default function PropertyBackground({ overlap = 0, pushDown = 120 }) {
   return (

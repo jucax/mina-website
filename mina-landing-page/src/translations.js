@@ -11,27 +11,28 @@ const translations = {
       cta: 'Get Started',
     },
     features: {
-      title: 'Features',
+      owner: 'Owner',
+      agent: 'Agent',
       items: [
         {
           icon: '🏡',
-          title: 'Easy Listings',
+          title: 'Easy Listing',
           desc: 'List your property in minutes and reach thousands of buyers or renters instantly.',
         },
         {
+          icon: '📢',
+          title: 'Promote & Get the Best Deal',
+          desc: 'Promote your property and get the best deal with Mina’s smart matching and exposure tools.',
+        },
+        {
           icon: '🤝',
-          title: 'Connect Instantly',
-          desc: 'Chat and negotiate directly with agents, owners, or buyers in a secure environment.',
+          title: 'Send Proposals & Connect Instantly',
+          desc: 'Send proposals and connect instantly with owners and buyers in a secure environment.',
         },
         {
           icon: '📊',
-          title: 'Smart Insights',
-          desc: 'Get real-time analytics and recommendations to make informed decisions.',
-        },
-        {
-          icon: '🔒',
-          title: 'Secure & Private',
-          desc: 'Your data is protected with industry-leading security and privacy standards.',
+          title: 'Premium Property Database',
+          desc: 'Access a premium database of properties, organized and filtered for your needs.',
         },
       ],
     },
@@ -110,27 +111,28 @@ const translations = {
       cta: 'Comenzar',
     },
     features: {
-      title: 'Características',
+      owner: 'Propietario',
+      agent: 'Agente',
       items: [
         {
           icon: '🏡',
-          title: 'Publicaciones fáciles',
+          title: 'Publicación fácil',
           desc: 'Publica tu propiedad en minutos y llega a miles de compradores o arrendatarios al instante.',
         },
         {
+          icon: '📢',
+          title: 'Promociona y obtén el mejor trato',
+          desc: 'Promociona tu propiedad y obtén el mejor trato con las herramientas inteligentes de Mina.',
+        },
+        {
           icon: '🤝',
-          title: 'Conexión instantánea',
-          desc: 'Chatea y negocia directamente con agentes, propietarios o compradores en un entorno seguro.',
+          title: 'Envía propuestas y conecta al instante',
+          desc: 'Envía propuestas y conecta al instante con propietarios y compradores en un entorno seguro.',
         },
         {
           icon: '📊',
-          title: 'Información inteligente',
-          desc: 'Obtén análisis y recomendaciones en tiempo real para tomar decisiones informadas.',
-        },
-        {
-          icon: '🔒',
-          title: 'Seguro y privado',
-          desc: 'Tus datos están protegidos con los mejores estándares de seguridad y privacidad.',
+          title: 'Base de datos premium',
+          desc: 'Accede a una base de datos premium de propiedades, organizada y filtrada para tus necesidades.',
         },
       ],
     },

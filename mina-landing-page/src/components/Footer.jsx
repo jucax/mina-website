@@ -1,4 +1,4 @@
-import logo from '../assets/logo_login_screen.png';
+import logo from '/assets/logo_login_screen.png';
 
 export default function Footer(props) {
   const { t } = props;

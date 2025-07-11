@@ -1,11 +1,11 @@
-import logo from '../assets/logo_login_screen.png';
+import logo from '/assets/logo_login_screen.png';
 let matchMain = logo;
 let matchFilter = logo;
 try {
-  matchMain = require('../assets/mockup-match-main.png');
+  matchMain = require('/assets/mockup-match-main.png');
 } catch {}
 try {
-  matchFilter = require('../assets/mockup-match-filter.png');
+  matchFilter = require('/assets/mockup-match-filter.png');
 } catch {}
 
 export default function MatchSection() {

@@ -41,7 +41,7 @@ const rotations = ['-rotate-6', 'rotate-3', '-rotate-2', 'rotate-2'];
 
 export default function PropertyCardsShowcase() {
   return (
-    <section className="w-full bg-green-50 py-16 flex justify-center items-center overflow-x-auto">
+    <section className="w-full bg-primary/90 py-16 flex justify-center items-center overflow-x-auto">
       <div className="flex gap-8 relative max-w-7xl w-full justify-center">
         {properties.map((p, i) => (
           <div
