@@ -1,17 +1,43 @@
+import { useState } from 'react';
+import translations from './translations';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import PropertyBackground from './components/PropertyBackground';
+import FeatureHighlight from './components/FeatureHighlight';
+import Capabilities from './components/Capabilities';
+import MatchSection from './components/MatchSection';
+import PropertyCardsShowcase from './components/PropertyCardsShowcase';
+import FAQSection from './components/FAQSection';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import Testimonials from './components/Testimonials';
 
-function App() {
+export default function App() {
+  const [lang, setLang] = useState('en');
+  const t = translations[lang];
   return (
     <div className="min-h-screen flex flex-col bg-minaWhite font-mina">
-      <Hero />
-      <Features />
-      <CallToAction />
-      <Footer />
+      <Navbar lang={lang} setLang={setLang} t={t} />
+      <Hero t={t} />
+      <Features t={t} />
+      {/* Pull FeatureHighlight up to overlap PropertyBackground */}
+      <div className="-mb-40">
+        <PropertyBackground overlap={48} pushDown={180} />
+      </div>
+      <FeatureHighlight t={t} overlap={48} data-aos="fade-up" />
+      <Capabilities t={t} />
+      <MatchSection t={t} />
+      {/* Pull FeatureHighlight up to overlap PropertyBackground */}
+      <div className="-mb-40">
+        <PropertyBackground overlap={48} pushDown={180} />
+      </div>
+      <FeatureHighlight t={t} overlap={48} data-aos="fade-up" />
+      <PropertyCardsShowcase t={t} />
+      <Testimonials t={t} />
+      <FAQSection t={t} />
+      <CallToAction t={t} data-aos="fade-up" />
+      <Footer id="footer" t={t} />
     </div>
   );
 }
-
-export default App;

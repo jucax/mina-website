@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slide-left { transform: translateX(-32px); transition: transform 1.2s cubic-bezier(.4,0,.2,1); }
+.slide-right { transform: translateX(32px); transition: transform 1.2s cubic-bezier(.4,0,.2,1); }
