@@ -72,7 +72,7 @@ export default function Capabilities() {
         ))}
       </div>
       {/* Centered title */}
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center font-mina w-full" data-aos="fade-up">20+ GAME FORMATS</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center font-mina w-full" data-aos="fade-up">10+ FEATURES</h2>
       {/* Bottom row of icons */}
       <div ref={bottomRef} className="w-full flex flex-row flex-wrap justify-center gap-x-12 gap-y-8 transition-all duration-700 will-change-transform" data-aos="fade-up">
         {features2.map((f, i) => (
