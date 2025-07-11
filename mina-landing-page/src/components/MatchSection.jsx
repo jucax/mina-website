@@ -1,56 +1,33 @@
-import logo from '/assets/logo_login_screen.png';
-let matchMain = logo;
-let matchFilter = logo;
-try {
-  matchMain = require('/assets/mockup-match-main.png');
-} catch {}
-try {
-  matchFilter = require('/assets/mockup-match-filter.png');
-} catch {}
+import locationGraphic from '/assets/location-graphic.png';
 
 export default function MatchSection() {
   return (
-    <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 py-20 px-4 max-w-7xl mx-auto relative" data-aos="fade-up">
+    <section data-aos="fade-up" className="w-full flex flex-col lg:flex-row items-center justify-center gap-3 py-32 px-8 max-w-7xl mx-auto relative overflow-hidden my-32">
       {/* LEFT: Text content */}
-      <div className="flex-1 flex flex-col items-start max-w-xl mb-8 lg:mb-0">
+      <div className="flex-1 flex flex-col items-start justify-center max-w-md mb-8 lg:mb-0 z-10 relative">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-mina">
-          Find your perfect match with Mina
+          List your property anywhere in Mexico
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          <div className="flex items-start gap-4">
-            <span className="text-3xl">🔎</span>
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-1">Smart Filtering</h3>
-              <p className="text-minaGray text-base">Agents and owners can filter properties and deals by location, price, features, and more to find the best matches instantly.</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4">
-            <span className="text-3xl">🤝</span>
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-1">Perfect Connections</h3>
-              <p className="text-minaGray text-base">Mina’s match engine connects agents with the most relevant buyers, sellers, or partners, saving time and maximizing opportunities.</p>
-            </div>
-          </div>
-        </div>
-        <a href="#" className="mt-8 text-primary underline font-medium hover:text-secondary transition text-lg">
-          Learn more about matching
+        <p className="text-lg text-minaGray mb-6">
+          With Mina, you can register your property from any city or region in Mexico—right from your phone or computer. Our network of professional agent partners, located throughout the country, are actively searching and reviewing new listings every day. No matter where your property is, Mina connects you with the right agents and buyers nationwide.
+        </p>
+        <ul className="list-disc pl-6 text-minaGray mb-6">
+          <li>Register your property from any location in Mexico</li>
+          <li>Get exposure to agents and buyers across the country</li>
+          <li>Our agent partners are always looking for new listings</li>
+        </ul>
+        <a href="#" className="mt-4 text-primary underline font-medium hover:text-secondary transition text-lg">
+          Learn more about nationwide listings
         </a>
       </div>
-      {/* RIGHT: Overlapping phone mockups */}
-      <div className="flex-1 flex items-center justify-center relative min-w-[320px] max-w-md">
-        {/* Main phone mockup: e.g., Mina match results screen */}
+      {/* RIGHT: Just the location graphic, larger */}
+      <div className="flex-1 flex items-center justify-center min-w-[850px] max-w-4xl h-[600px] z-10">
         <img
-          src={matchMain}
-          alt="Mina Match Results Mockup"
-          className="rounded-3xl shadow-2xl w-3/4 object-cover z-10 relative"
+          src={locationGraphic}
+          alt="Mina Mexico Location Coverage"
+          className="w-full h-full object-contain opacity-90 pointer-events-none select-none"
+          style={{ filter: 'drop-shadow(0 8px 32px rgba(20,78,122,0.18))' }}
         />
-        {/* Overlapping phone: e.g., Mina filter screen */}
-        <img
-          src={matchFilter}
-          alt="Mina Match Filter Mockup"
-          className="absolute -left-8 top-12 w-2/5 rounded-2xl shadow-xl border-4 border-white z-20"
-        />
-        {/* Suggestion: Ask user for these screenshots from the Mina app for best results */}
       </div>
     </section>
   );

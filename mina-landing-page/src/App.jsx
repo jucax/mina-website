@@ -39,7 +39,7 @@ export default function App() {
       <MatchSection t={t} />
       {/* Pull FeatureHighlight up to overlap PropertyBackground */}
       <div className="-mb-40">
-        <PropertyBackground overlap={48} pushDown={180} />
+        <PropertyBackground overlap={48} pushDown={180} bgImage="/assets/propertyu-bg-2.jpg" />
       </div>
       <FeatureHighlight
         mainImage="/assets/agent-mockup-1.png"

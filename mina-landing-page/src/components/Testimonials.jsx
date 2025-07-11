@@ -1,13 +1,13 @@
 export default function Testimonials({ t }) {
   return (
-    <section className="w-full py-20 px-4 flex flex-col items-center bg-minaWhite">
-      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center font-mina">{t.testimonials.headline}</h2>
+    <section data-aos="fade-up" className="w-full py-20 px-4 flex flex-col items-center bg-minaWhite">
+      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center font-mina">Join the Mina Community</h2>
       <div className="flex flex-col items-center mb-10">
         <div className="flex gap-1 text-yellow-400 text-2xl mb-1">
           {[...Array(4)].map((_, i) => <span key={i}>★</span>)}<span className="text-gray-300">★</span>
         </div>
         <div className="font-bold text-xl text-primary">{t.testimonials.rating}</div>
-        <div className="text-minaGray text-sm">{t.testimonials.ratingsCount}</div>
+        {/* Removed ratingsCount */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl">
         {t.testimonials.cards.map((c, i) => (

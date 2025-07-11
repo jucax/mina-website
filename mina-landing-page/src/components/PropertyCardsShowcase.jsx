@@ -1,7 +1,7 @@
 const properties = [
   {
     id: 1,
-    image: '/assets/property1.jpg', // TODO: Replace with real property images
+    image: '/assets/post-property-2.jpg',
     title: 'Modern Family Home',
     agent: 'Ana Torres',
     desc: 'Spacious 4BR, 3BA in a quiet neighborhood. #FamilyHome',
@@ -10,7 +10,7 @@ const properties = [
   },
   {
     id: 2,
-    image: '/assets/property2.jpg',
+    image: '/assets/post-property-1.jpg',
     title: 'Downtown Loft',
     agent: 'Luis Perez',
     desc: 'Stylish loft in the heart of the city. #CityLife',
@@ -19,7 +19,7 @@ const properties = [
   },
   {
     id: 3,
-    image: '/assets/property3.jpg',
+    image: '/assets/post-property-3.jpeg',
     title: 'Golf Course Villa',
     agent: 'Maria Lopez',
     desc: 'Luxury villa with golf course views. #GolfLiving',
@@ -28,7 +28,7 @@ const properties = [
   },
   {
     id: 4,
-    image: '/assets/property4.jpg',
+    image: '/assets/post-property-4.jpg',
     title: 'Pet Friendly Condo',
     agent: 'Carlos Ruiz',
     desc: 'Bring your furry friends! #PetFriendly',
@@ -41,7 +41,7 @@ const rotations = ['-rotate-6', 'rotate-3', '-rotate-2', 'rotate-2'];
 
 export default function PropertyCardsShowcase() {
   return (
-    <section className="w-full bg-primary/90 py-16 flex justify-center items-center overflow-x-auto">
+    <section data-aos="fade-up" className="w-full bg-primary/90 py-16 flex justify-center items-center overflow-x-auto">
       <div className="flex gap-8 relative max-w-7xl w-full justify-center">
         {properties.map((p, i) => (
           <div

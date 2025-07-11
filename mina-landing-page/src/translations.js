@@ -1,14 +1,15 @@
 const translations = {
   en: {
+    brand: 'Mina Real Estate',
     nav: {
       home: 'Home',
       features: 'Features',
       contact: 'Contact',
     },
     hero: {
-      headline: 'Mina Real Estate',
-      subheadline: 'Making Real Estate Simple',
-      cta: 'Get Started',
+      headline: 'Mina App',
+      subheadline: 'The easiest way to \nsell your property',
+      cta: 'See more',
     },
     features: {
       owner: 'Owner',

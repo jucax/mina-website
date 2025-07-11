@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function FAQSection({ t }) {
   const [open, setOpen] = useState(0);
   return (
-    <section className="w-full py-20 px-4 flex flex-col items-center">
+    <section data-aos="fade-up" className="w-full py-20 px-4 flex flex-col items-center">
       <h2 className="text-4xl font-bold text-primary mb-10 text-center font-mina">{t.faq.title}</h2>
       <div className="flex flex-col gap-6 w-full max-w-2xl">
         {t.faq.items.map((faq, i) => (
