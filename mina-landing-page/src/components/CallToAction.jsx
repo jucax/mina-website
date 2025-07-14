@@ -8,8 +8,8 @@ export default function CallToAction({ t }) {
           <p className="text-lg md:text-xl text-primary mb-8 font-medium">{t.download.subheadline}</p>
           <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
             <div className="flex flex-col gap-2">
-              <a href="#" className="block"><img src="/assets/appstore-badge.png" alt={t.download.appstore} className="h-12" /></a>
-              <a href="#" className="block"><img src="/assets/googleplay-badge.png" alt={t.download.googleplay} className="h-12" /></a>
+              <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/appstore-badge.png" alt={t.download.appstore} className="h-12" /></a>
+              <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/googleplay-badge.png" alt={t.download.googleplay} className="h-12" /></a>
             </div>
           </div>
         </div>
