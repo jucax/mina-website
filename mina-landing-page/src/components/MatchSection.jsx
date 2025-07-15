@@ -1,27 +1,27 @@
 import locationGraphic from '/assets/location-graphic.png';
 
-export default function MatchSection() {
+export default function MatchSection({ t }) {
   return (
     <section data-aos="fade-up" className="w-full flex flex-col lg:flex-row items-center justify-center gap-3 py-32 px-8 max-w-7xl mx-auto relative overflow-hidden my-32">
       {/* LEFT: Text content */}
       <div className="flex-1 flex flex-col items-start justify-center max-w-md mb-8 lg:mb-0 z-10 relative">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-mina">
-          List your property anywhere in Mexico
+          {t.matchSection.headline}
         </h2>
         <p className="text-lg text-minaGray mb-6">
-          With Mina, you can register your property from any city or region in Mexico—right from your phone or computer. Our network of professional agent partners, located throughout the country, are actively searching and reviewing new listings every day. No matter where your property is, Mina connects you with the right agents and buyers nationwide.
+          {t.matchSection.desc}
         </p>
         <ul className="list-disc pl-6 text-minaGray mb-6">
-          <li>Register your property from any location in Mexico</li>
-          <li>Get exposure to agents and buyers across the country</li>
-          <li>Our agent partners are always looking for new listings</li>
+          {t.matchSection.bullets.map((bullet, index) => (
+            <li key={index}>{bullet}</li>
+          ))}
         </ul>
         <a href="#" className="mt-4 text-primary underline font-medium hover:text-secondary transition text-lg">
-          Learn more about nationwide listings
+          {t.matchSection.cta}
         </a>
       </div>
       {/* RIGHT: Just the location graphic, larger */}
-      <div className="flex-1 flex items-center justify-center min-w-[850px] max-w-4xl h-[600px] z-10">
+      <div className="flex-1 flex items-center justify-center w-full max-w-4xl h-[300px] md:h-[600px] z-10">
         <img
           src={locationGraphic}
           alt="Mina Mexico Location Coverage"

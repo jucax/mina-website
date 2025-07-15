@@ -1,7 +1,7 @@
 export default function Testimonials({ t }) {
   return (
     <section data-aos="fade-up" className="w-full py-20 px-4 flex flex-col items-center bg-minaWhite">
-      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center font-mina">Join the Mina Community</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-center font-mina">{t.testimonials.headline}</h2>
       <div className="flex flex-col items-center mb-10">
         <div className="flex gap-1 text-yellow-400 text-2xl mb-1">
           {[...Array(4)].map((_, i) => <span key={i}>★</span>)}<span className="text-gray-300">★</span>

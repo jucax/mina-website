@@ -2,11 +2,18 @@ export default function FeatureHighlight({
   mainImage = "/assets/mockup-property-card.png",
   overlayImage = "/assets/mockup-dashboard.png",
   icon = "💼",
-  headline = "Simple property management and live updates for everyone",
-  desc = "Keep track of your properties, deals, and communications in one place. Mina makes real estate management easy for agents, owners, and buyers. Get live updates, analytics, and seamless collaboration with your team or clients.",
-  readMore = "Read more",
+  headline,
+  desc,
+  readMore,
   overlap = 48,
+  t,
+  sectionKey,
 }) {
+  // Use translation keys if provided, otherwise fall back to props
+  const finalHeadline = t && sectionKey ? t[sectionKey].headline : headline;
+  const finalDesc = t && sectionKey ? t[sectionKey].desc : desc;
+  const finalReadMore = t && sectionKey ? t[sectionKey].cta : readMore;
+
   return (
     <section className={`w-full flex flex-col lg:flex-row items-center justify-center gap-14 py-16 px-4 max-w-7xl mx-auto relative z-30 mb-32 ${overlap ? `-mt-[${overlap}px]` : ''}`} data-aos="fade-up">
       {/* LEFT: Device mockups */}
@@ -26,13 +33,13 @@ export default function FeatureHighlight({
       <div className="flex-1 flex flex-col items-start justify-center max-w-xl py-12 text-left">
         <div className="text-4xl mb-4">{icon}</div>
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-mina">
-          {headline}
+          {finalHeadline}
         </h2>
         <p className="text-minaGray text-lg mb-6">
-          {desc}
+          {finalDesc}
         </p>
         <a href="#" className="text-primary underline font-medium hover:text-secondary transition text-lg">
-          {readMore}
+          {finalReadMore}
         </a>
       </div>
     </section>

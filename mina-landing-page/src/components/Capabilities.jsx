@@ -13,29 +13,18 @@ const icons = [
   '/assets/icons-capabilities/10.png',
 ];
 
-const features = [
-  { label: 'Listings' },
-  { label: 'Chat' },
-  { label: 'Analytics' },
-  { label: 'Proposals' },
-  { label: 'Notifications' },
-  { label: 'Deals' },
-  { label: 'Rent & Sell' },
-  { label: 'Promote' },
-  { label: 'Fast Contact' },
-  { label: 'Security' },
-];
-
 // Shuffle for the second row
 function shuffled(arr) {
   return arr.slice().sort(() => Math.random() - 0.5);
 }
-const features2 = shuffled(features);
-const icons2 = shuffled(icons);
 
-export default function Capabilities() {
+export default function Capabilities({ t }) {
   const topRef = useRef();
   const bottomRef = useRef();
+
+  const features = t.capabilities.features;
+  const features2 = shuffled(features);
+  const icons2 = shuffled(icons);
 
   useEffect(() => {
     // Parallax scroll effect for icon rows
@@ -72,7 +61,7 @@ export default function Capabilities() {
         ))}
       </div>
       {/* Centered title */}
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center font-mina w-full" data-aos="fade-up">10+ FEATURES</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center font-mina w-full" data-aos="fade-up">{t.capabilities.title}</h2>
       {/* Bottom row of icons */}
       <div ref={bottomRef} className="w-full flex flex-row flex-wrap justify-center gap-x-12 gap-y-8 transition-all duration-700 will-change-transform" data-aos="fade-up">
         {features2.map((f, i) => (

@@ -6,10 +6,13 @@ export default function CallToAction({ t }) {
         <div className="flex-1 flex flex-col items-start justify-center max-w-lg">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-mina">{t.cta.headline}</h2>
           <p className="text-lg md:text-xl text-primary mb-8 font-medium">{t.download.subheadline}</p>
-          <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
+          <div className="flex flex-row items-center gap-12 mb-6">
             <div className="flex flex-col gap-2">
               <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/appstore-badge.png" alt={t.download.appstore} className="h-12" /></a>
               <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/googleplay-badge.png" alt={t.download.googleplay} className="h-12" /></a>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src="/assets/expo-qr.png" alt="Scan QR code to download Mina app" className="w-24 h-24 bg-white p-2 rounded-xl shadow-lg" />
             </div>
           </div>
         </div>

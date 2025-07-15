@@ -28,8 +28,7 @@ export default function Hero({ t }) {
       <div className="flex-1 flex flex-col items-center justify-center md:pl-24">
         <h1 className="text-4xl md:text-6xl font-bold font-mina text-center mb-8 leading-tight">
           {t.hero.headline}<br />
-          <span className="text-secondary block mt-2">{t.hero.subheadline}</span><br />
-          <span className="text-secondary block">{t.hero.subheadline2}</span>
+          <span className="text-secondary block mt-2">{t.hero.subheadline}</span>
         </h1>
         <p className="text-lg md:text-2xl text-minaLightGray text-center max-w-2xl mb-8">
           {t.hero.desc || 'Everything you need to make the most out of your real estate journey. Discover, manage, and connect—all in one place.'}
@@ -37,9 +36,14 @@ export default function Hero({ t }) {
         <a href="#features" className="bg-secondary text-primary font-bold px-8 py-3 rounded-full shadow-lg hover:bg-orange-400 transition text-lg mb-8">
           {t.hero.cta}
         </a>
-        <div className="flex flex-col md:flex-row items-center gap-4 mt-2">
-          <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/appstore-badge.png" alt="Download on the App Store" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
-          <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
+        <div className="flex flex-row items-center gap-12 mt-2">
+          <div className="flex flex-col gap-2">
+            <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/appstore-badge.png" alt="Download on the App Store" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
+            <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/assets/expo-qr.png" alt="Scan QR code to download Mina app" className="w-32 h-32 bg-white p-2 rounded-xl shadow-lg" />
+          </div>
         </div>
       </div>
       {/* Right: App animation/image placeholder */}

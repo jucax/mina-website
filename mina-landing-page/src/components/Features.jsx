@@ -18,11 +18,7 @@ export default function Features({ t }) {
               <div key={i} className="flex flex-col items-center bg-white rounded-2xl shadow-md p-8 border border-minaLightGray hover:shadow-xl transition">
                 <img src={icons[i]} alt={f.title} className="w-24 h-24 mb-4" />
                 <h3 className="text-xl font-bold text-black mb-2 text-center">
-                  {i === 0 ? (
-                    <>
-                      Easy Listing<br />for Owners
-                    </>
-                  ) : f.title}
+                  {f.title}
                 </h3>
                 <p className="text-minaGray text-center">{f.desc}</p>
               </div>

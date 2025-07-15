@@ -9,6 +9,7 @@ const translations = {
     hero: {
       headline: 'Mina App',
       subheadline: 'The easiest way to \nsell your property',
+      desc: 'Everything you need to make the most out of your real estate journey. Discover, manage, and connect—all in one place.',
       cta: 'See more',
     },
     features: {
@@ -17,13 +18,13 @@ const translations = {
       items: [
         {
           icon: '🏡',
-          title: 'Easy Listing',
+          title: 'Easy Listing\nfor Owners',
           desc: 'List your property in minutes and reach thousands of buyers or renters instantly.',
         },
         {
           icon: '📢',
           title: 'Promote & Get the Best Deal',
-          desc: 'Promote your property and get the best deal with Mina’s smart matching and exposure tools.',
+          desc: 'Promote your property and get the best deal with Mina\'s smart matching and exposure tools.',
         },
         {
           icon: '🤝',
@@ -42,6 +43,41 @@ const translations = {
       headline: 'Simple property management and live updates for everyone',
       desc: 'Keep track of your properties, deals, and communications in one place. Mina makes real estate management easy for agents, owners, and buyers. Get live updates, analytics, and seamless collaboration with your team or clients.',
       readMore: 'Read more',
+    },
+    matchSection: {
+      headline: 'List your property anywhere in Mexico',
+      desc: 'With Mina, you can register your property from any city or region in Mexico—right from your phone or computer. Our network of professional agent partners, located throughout the country, are actively searching and reviewing new listings every day. No matter where your property is, Mina connects you with the right agents and buyers nationwide.',
+      bullets: [
+        'Register your property from any location in Mexico',
+        'Get exposure to agents and buyers across the country',
+        'Our agent partners are always looking for new listings'
+      ],
+      cta: 'Learn more about nationwide listings',
+    },
+    agentSection: {
+      headline: 'Find the Best Properties & Connect Directly with Owners',
+      desc: 'As an agent, Mina gives you access to a powerful property list with advanced filters—search by compensation, location, and more. Stand out by sending personalized proposals to property owners and connect directly to close deals faster. All your opportunities, organized and at your fingertips.',
+      cta: 'Discover Mina for agents',
+    },
+    ownerSection: {
+      headline: 'List Your Property & Receive Proposals Instantly',
+      desc: 'As a property owner, Mina makes it effortless to register your property in just a few steps. Get instant exposure to thousands of qualified agents and buyers. Receive personalized proposals directly from top agents, compare offers, and choose the best deal—all from your dashboard.',
+      cta: 'See how easy it is for owners',
+    },
+    capabilities: {
+      title: '10+ FEATURES',
+      features: [
+        { label: 'Listings' },
+        { label: 'Chat' },
+        { label: 'Analytics' },
+        { label: 'Proposals' },
+        { label: 'Notifications' },
+        { label: 'Deals' },
+        { label: 'Rent & Sell' },
+        { label: 'Promote' },
+        { label: 'Fast Contact' },
+        { label: 'Security' },
+      ],
     },
     faq: {
       title: 'FAQs',
@@ -62,7 +98,7 @@ const translations = {
       more: 'More FAQs',
     },
     testimonials: {
-      headline: 'Join 1.5 million users on Mina',
+      headline: 'Join the Mina Community',
       rating: '4.8 out of 5',
       ratingsCount: '19.2K ratings',
       cards: [
@@ -101,15 +137,17 @@ const translations = {
     },
   },
   es: {
+    brand: 'Mina Bienes Raíces',
     nav: {
       home: 'Inicio',
       features: 'Características',
       contact: 'Contacto',
     },
     hero: {
-      headline: 'Mina Bienes Raíces',
-      subheadline: 'Haciendo el sector inmobiliario simple',
-      cta: 'Comenzar',
+      headline: 'Mina App',
+      subheadline: 'La forma más fácil de \nvender tu propiedad',
+      desc: 'Todo lo que necesitas para aprovechar al máximo tu experiencia inmobiliaria. Descubre, gestiona y conecta—todo en un solo lugar.',
+      cta: 'Ver más',
     },
     features: {
       owner: 'Propietario',
@@ -117,7 +155,7 @@ const translations = {
       items: [
         {
           icon: '🏡',
-          title: 'Publicación fácil',
+          title: 'Publicación Fácil\npara Propietarios',
           desc: 'Publica tu propiedad en minutos y llega a miles de compradores o arrendatarios al instante.',
         },
         {
@@ -143,6 +181,41 @@ const translations = {
       desc: 'Lleva el control de tus propiedades, tratos y comunicaciones en un solo lugar. Mina facilita la gestión inmobiliaria para agentes, propietarios y compradores. Recibe actualizaciones en vivo, análisis y colaboración fluida con tu equipo o clientes.',
       readMore: 'Leer más',
     },
+    matchSection: {
+      headline: 'Publica tu propiedad en cualquier lugar de México',
+      desc: 'Con Mina, puedes registrar tu propiedad desde cualquier ciudad o región de México—directamente desde tu teléfono o computadora. Nuestra red de agentes profesionales asociados, ubicados en todo el país, están activamente buscando y revisando nuevas propiedades todos los días. No importa dónde esté tu propiedad, Mina te conecta con los agentes y compradores adecuados a nivel nacional.',
+      bullets: [
+        'Registra tu propiedad desde cualquier ubicación en México',
+        'Obtén exposición a agentes y compradores en todo el país',
+        'Nuestros agentes asociados siempre están buscando nuevas propiedades'
+      ],
+      cta: 'Conoce más sobre las publicaciones nacionales',
+    },
+    agentSection: {
+      headline: 'Encuentra las Mejores Propiedades y Conecta Directamente con Propietarios',
+      desc: 'Como agente, Mina te da acceso a una poderosa lista de propiedades con filtros avanzados—busca por compensación, ubicación y más. Destácate enviando propuestas personalizadas a los propietarios y conecta directamente para cerrar tratos más rápido. Todas tus oportunidades, organizadas y al alcance de tu mano.',
+      cta: 'Descubre Mina para agentes',
+    },
+    ownerSection: {
+      headline: 'Publica tu Propiedad y Recibe Propuestas al Instante',
+      desc: 'Como propietario, Mina hace que sea muy fácil registrar tu propiedad en solo unos pasos. Obtén exposición instantánea a miles de agentes y compradores calificados. Recibe propuestas personalizadas directamente de los mejores agentes, compara ofertas y elige el mejor trato—todo desde tu panel de control.',
+      cta: 'Ve qué tan fácil es para propietarios',
+    },
+    capabilities: {
+      title: '10+ CARACTERÍSTICAS',
+      features: [
+        { label: 'Propiedades' },
+        { label: 'Chat' },
+        { label: 'Análisis' },
+        { label: 'Propuestas' },
+        { label: 'Notificaciones' },
+        { label: 'Tratos' },
+        { label: 'Rentar y Vender' },
+        { label: 'Promocionar' },
+        { label: 'Contacto Rápido' },
+        { label: 'Seguridad' },
+      ],
+    },
     faq: {
       title: 'Preguntas frecuentes',
       items: [
@@ -162,7 +235,7 @@ const translations = {
       more: 'Más preguntas',
     },
     testimonials: {
-      headline: 'Únete a 1.5 millones de usuarios en Mina',
+      headline: 'Únete a la Comunidad Mina',
       rating: '4.8 de 5',
       ratingsCount: '19.2K valoraciones',
       cards: [
