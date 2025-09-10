@@ -8,8 +8,8 @@ const translations = {
     },
     hero: {
       headline: 'Mina App',
-      subheadline: 'Revolutionize the real estate market',
-      desc: 'We are what you need to make the most out of your real estate experience...',
+      subheadline: 'The easiest way to \nsell your property',
+      desc: 'Everything you need to make the most out of your real estate journey. Discover, manage, and connect—all in one place.',
       cta: 'See more',
     },
     features: {
@@ -61,7 +61,7 @@ const translations = {
     },
     ownerSection: {
       headline: 'List Your Property & Receive Proposals Instantly',
-      desc: 'As a property owner, Mina makes it effortless to register your property in just a few steps. Get instant exposure to thousands of qualified agents. Receive personalized proposals directly from top agents, compare advisor proposals and choose the one you like best to help you sell/rent—all from your dashboard.',
+      desc: 'As a property owner, Mina makes it effortless to register your property in just a few steps. Get instant exposure to thousands of qualified agents and buyers. Receive personalized proposals directly from top agents, compare offers, and choose the best deal—all from your dashboard.',
       cta: 'See how easy it is for owners',
     },
     capabilities: {
@@ -84,11 +84,11 @@ const translations = {
       items: [
         {
           q: 'Can I use Mina for free?',
-          a: 'Mina is completely free for property owners who want to sell/rent their property. Real estate advisors will need to purchase a subscription to access the property list.'
+          a: 'Yes, you can! The free version of Mina is perfect for individual agents and owners. List properties, connect, and manage deals at no cost.'
         },
         {
           q: 'Is Mina the right real estate app for me?',
-          a: 'Mina is designed for advisors who are tired of going out to look for clients and not achieving their goals, and it\'s also made for those who want to sell/rent their property and don\'t know how to do it quickly, reliably and effectively.'
+          a: 'Mina is designed for agents, owners, and buyers in Mexico. It helps you find, match, and manage properties and deals easily.'
         },
         {
           q: 'Where can I find the app?',
@@ -103,23 +103,23 @@ const translations = {
       ratingsCount: '19.2K ratings',
       cards: [
         {
-          title: 'Casa Familiar Moderna',
-          text: 'Amplia casa de 4 recámaras, 3 baños en un barrio tranquilo. #CasaFamiliar',
-          user: 'Ana Torres',
+          title: 'Super easy to use',
+          text: 'Love it. Easy to use for managing properties and great statistics.',
+          user: 'AnaTorres',
         },
         {
-          title: 'Ideal para agentes',
-          text: 'Aplicación brillante. Te ayuda a planear y rastrear tratos, incluso en zonas desconocidas.',
+          title: 'Great for agents',
+          text: 'Brilliant app. Helps you plan and track deals, even in unfamiliar areas.',
           user: 'LuisPerez',
         },
         {
-          title: '¡Excelente!',
-          text: 'La mejor app para agencias pequeñas y grandes. Ahora puedes gestionar tratos multiagente y rastrear todo. Todos en mi agencia la usan.',
+          title: 'Outstanding!',
+          text: 'Best app for small to large agencies. Now you can run multi-agent deals and track everything. Everyone in my agency uses it.',
           user: 'MariaLopez',
         },
         {
-          title: 'Funciona en todos lados - ¡me encanta!',
-          text: 'He usado Mina por años en diferentes ciudades, más de 40 propiedades y nunca tuve problemas. Mi función favorita es el motor de matches. ¡Muy recomendada!',
+          title: 'Works everywhere - love it!',
+          text: 'I have been using Mina for years in different cities, over 40+ properties and never faced any issues. One of my favorite features is the match engine. Highly recommended!',
           user: 'CarlosRuiz',
         },
       ],
@@ -145,8 +145,8 @@ const translations = {
     },
     hero: {
       headline: 'Mina App',
-      subheadline: 'Revolucionamos el mercado inmobiliario',
-      desc: 'Somos lo que necesitas para aprovechar al máximo tu experiencia inmobiliaria...',
+      subheadline: 'La forma más fácil de \nvender tu propiedad',
+      desc: 'Todo lo que necesitas para aprovechar al máximo tu experiencia inmobiliaria. Descubre, gestiona y conecta—todo en un solo lugar.',
       cta: 'Ver más',
     },
     features: {
@@ -198,7 +198,7 @@ const translations = {
     },
     ownerSection: {
       headline: 'Publica tu Propiedad y Recibe Propuestas al Instante',
-      desc: 'Como propietario, Mina hace que sea muy fácil registrar tu propiedad en solo unos pasos. Obtén exposición instantánea a miles de agentes. Recibe propuestas personalizadas directamente de los mejores agentes, compara las propuestas de los asesores y elige al que más te agrade para ayudarte vender/rentar—todo desde tu panel de control.',
+      desc: 'Como propietario, Mina hace que sea muy fácil registrar tu propiedad en solo unos pasos. Obtén exposición instantánea a miles de agentes y compradores calificados. Recibe propuestas personalizadas directamente de los mejores agentes, compara ofertas y elige el mejor trato—todo desde tu panel de control.',
       cta: 'Ve qué tan fácil es para propietarios',
     },
     capabilities: {
@@ -221,11 +221,11 @@ const translations = {
       items: [
         {
           q: '¿Puedo usar Mina gratis?',
-          a: 'Mina es completamente gratis para propietarios que quieran vender/rentar su inmueble. Asesores inmobiliarios deberán adquirir una suscripción para acceder a la lista de propiedades.'
+          a: '¡Sí! La versión gratuita de Mina es perfecta para agentes y propietarios individuales. Publica propiedades, conecta y gestiona tratos sin costo.'
         },
         {
           q: '¿Mina es la app inmobiliaria adecuada para mí?',
-          a: 'Mina está diseñada para asesores que están cansados de salir a buscar clientes y que no logren cumplir su objetivo y también está hecha para quienes quieren vender/rentar su propiedad y no saben cómo hacerlo de manera rápida, confiable y efectiva.'
+          a: 'Mina está diseñada para agentes, propietarios y compradores en México. Te ayuda a encontrar, conectar y gestionar propiedades y tratos fácilmente.'
         },
         {
           q: '¿Dónde encuentro la app?',
@@ -240,9 +240,9 @@ const translations = {
       ratingsCount: '19.2K valoraciones',
       cards: [
         {
-          title: 'Casa Familiar Moderna',
-          text: 'Amplia casa de 4 recámaras, 3 baños en un barrio tranquilo. #CasaFamiliar',
-          user: 'Ana Torres',
+          title: 'Súper fácil de usar',
+          text: 'Me encanta. Muy fácil de usar para gestionar propiedades y excelentes estadísticas.',
+          user: 'AnaTorres',
         },
         {
           title: 'Ideal para agentes',
@@ -275,4 +275,4 @@ const translations = {
   },
 };
 
-export default translations;
+export default translations; 

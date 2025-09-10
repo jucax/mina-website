@@ -2,36 +2,36 @@ const properties = [
   {
     id: 1,
     image: '/assets/post-property-2.jpg',
-    title: 'Modern Family Home',
+    title: 'Casa Familiar Moderna',
     agent: 'Ana Torres',
-    desc: 'Spacious 4BR, 3BA in a quiet neighborhood. #FamilyHome',
+    desc: 'Amplia casa de 4 recámaras, 3 baños en un barrio tranquilo. #CasaFamiliar',
     likes: 52,
     comments: 24,
   },
   {
     id: 2,
     image: '/assets/post-property-1.jpg',
-    title: 'Downtown Loft',
+    title: 'Loft del Centro',
     agent: 'Luis Perez',
-    desc: 'Stylish loft in the heart of the city. #CityLife',
+    desc: 'Loft elegante en el corazón de la ciudad. #VidaUrbana',
     likes: 38,
     comments: 15,
   },
   {
     id: 3,
     image: '/assets/post-property-3.jpeg',
-    title: 'Golf Course Villa',
+    title: 'Villa con Campo de Golf',
     agent: 'Maria Lopez',
-    desc: 'Luxury villa with golf course views. #GolfLiving',
+    desc: 'Villa de lujo con vista al campo de golf. #VidaGolf',
     likes: 52,
     comments: 24,
   },
   {
     id: 4,
     image: '/assets/post-property-4.jpg',
-    title: 'Pet Friendly Condo',
+    title: 'Condominio Pet Friendly',
     agent: 'Carlos Ruiz',
-    desc: 'Bring your furry friends! #PetFriendly',
+    desc: '¡Trae a tus mascotas! #PetFriendly',
     likes: 65,
     comments: 11,
   },
@@ -39,7 +39,7 @@ const properties = [
 
 const rotations = ['-rotate-6', 'rotate-3', '-rotate-2', 'rotate-2'];
 
-export default function PropertyCardsShowcase() {
+export default function PropertyCardsShowcase({ t }) {
   return (
     <section data-aos="fade-up" className="w-full bg-primary/90 py-16 flex justify-center items-center overflow-x-auto">
       <div className="flex gap-8 relative max-w-7xl w-full justify-center">
@@ -51,11 +51,11 @@ export default function PropertyCardsShowcase() {
           >
             <img src={p.image} alt={p.title} className="w-full h-40 object-cover rounded-xl mb-3" />
             <div className="font-bold text-primary mb-1">{p.title}</div>
-            <div className="text-sm text-minaGray mb-2">by {p.agent}</div>
+            <div className="text-sm text-minaGray mb-2">por {p.agent}</div>
             <div className="text-sm mb-3">{p.desc}</div>
             <div className="flex gap-4 text-xs text-green-700 font-semibold">
-              <span>{p.likes} likes</span>
-              <span>{p.comments} comments</span>
+              <span>{p.likes} me gusta</span>
+              <span>{p.comments} comentarios</span>
             </div>
           </div>
         ))}
@@ -68,4 +68,4 @@ export default function PropertyCardsShowcase() {
       </div>
     </section>
   );
-} 
+}

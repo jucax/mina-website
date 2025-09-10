@@ -15,12 +15,12 @@ export default function Features({ t }) {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {t.features.items.slice(0, 2).map((f, i) => (
-              <div key={i} className="flex flex-col items-center bg-white rounded-2xl shadow-md p-8 border border-minaLightGray hover:shadow-xl transition">
+              <div key={i} className="flex flex-col items-center bg-white rounded-2xl shadow-md p-8 border border-minaLightGray hover:shadow-xl transition h-96">
                 <img src={icons[i]} alt={f.title} className="w-24 h-24 mb-4" />
                 <h3 className="text-xl font-bold text-black mb-2 text-center">
                   {f.title}
                 </h3>
-                <p className="text-minaGray text-center">{f.desc}</p>
+                <p className="text-minaGray text-center flex-1 flex items-center">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -32,10 +32,10 @@ export default function Features({ t }) {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {t.features.items.slice(2, 4).map((f, i) => (
-              <div key={i+2} className="flex flex-col items-center bg-white rounded-2xl shadow-md p-8 border border-minaLightGray hover:shadow-xl transition">
+              <div key={i+2} className="flex flex-col items-center bg-white rounded-2xl shadow-md p-8 border border-minaLightGray hover:shadow-xl transition h-96">
                 <img src={icons[i+2]} alt={f.title} className="w-24 h-24 mb-4" />
                 <h3 className="text-xl font-bold text-black mb-2 text-center">{f.title}</h3>
-                <p className="text-minaGray text-center">{f.desc}</p>
+                <p className="text-minaGray text-center flex-1 flex items-center">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -43,4 +43,4 @@ export default function Features({ t }) {
       </div>
     </section>
   );
-} 
+}
