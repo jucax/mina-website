@@ -1,16 +1,35 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '/assets/logo-o.png';
 
 export default function Navbar({ lang, setLang, t }) {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
   const flag = lang === 'en' ? '🇺🇸' : '🇲🇽';
+  
   const navLinks = [
     { label: t.nav.home, href: '#hero' },
     { label: t.nav.features, href: '#features' },
     { label: lang === 'es' ? 'Perfiles' : 'Profiles', href: '/profile-selection' },
     { label: t.nav.contact, href: '#footer' },
+    { label: lang === 'es' ? 'Aviso de Privacidad' : 'Privacy Policy', href: '/privacy-policy' },
   ];
+
+  const handleNavClick = (href) => {
+    if (href.startsWith('#')) {
+      // If we're not on the home page, navigate to home first, then scroll
+      if (location.pathname !== '/') {
+        window.location.href = `/${href}`;
+      } else {
+        // We're on home page, just scroll
+        const id = href.replace('#', '');
+        const section = document.getElementById(id);
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setOpen(false);
+  };
+
   return (
     <nav className="w-full bg-white text-black shadow-md shadow-gray-300/60 sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
@@ -20,10 +39,10 @@ export default function Navbar({ lang, setLang, t }) {
           aria-label="Go to home"
         >
           <img src={logo} alt="Mina Logo" className="max-h-10" style={{height: '40px', width: 'auto'}} />
-          <span className="font-bold text-xl font-mina tracking-wide group-hover:text-secondary transition">{t.brand}</span>
+          <span className="font-bold text-xl font-mina tracking-wide group-hover:text-secondary transition">Mina Real Estate</span>
         </Link>
         <div className="flex items-center gap-6 ml-auto">
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex gap-6">
             {navLinks.map(link => (
               link.href.startsWith('#') ? (
                 <a
@@ -32,9 +51,7 @@ export default function Navbar({ lang, setLang, t }) {
                   className="hover:text-secondary transition font-medium"
                   onClick={e => {
                     e.preventDefault();
-                    const id = link.href.replace('#', '');
-                    const section = document.getElementById(id);
-                    if (section) section.scrollIntoView({ behavior: 'smooth' });
+                    handleNavClick(link.href);
                   }}
                 >
                   {link.label}
@@ -74,10 +91,7 @@ export default function Navbar({ lang, setLang, t }) {
                 className="hover:text-secondary transition font-medium"
                 onClick={e => {
                   e.preventDefault();
-                  setOpen(false);
-                  const id = link.href.replace('#', '');
-                  const section = document.getElementById(id);
-                  if (section) section.scrollIntoView({ behavior: 'smooth' });
+                  handleNavClick(link.href);
                 }}
               >
                 {link.label}

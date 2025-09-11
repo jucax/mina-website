@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import translations from './translations';
+import { useLanguage } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -14,8 +15,9 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 
 export default function App() {
-  const [lang, setLang] = useState('en');
+  const { lang, setLang } = useLanguage();
   const t = translations[lang];
+  
   return (
     <div className="min-h-screen flex flex-col bg-minaWhite font-mina">
       <Navbar lang={lang} setLang={setLang} t={t} />

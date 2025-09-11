@@ -88,25 +88,6 @@ export default function ProfileSelection({ t }) {
                   }
                 </p>
 
-                {/* Goal Text - Moved to bottom */}
-                <div className="text-secondary text-2xl md:text-3xl font-bold leading-tight space-y-1">
-                  {t.hero.headline === 'Mina App' ? (
-                    <>
-                      <div className="hover:text-white transition-colors">Quiero</div>
-                      <div className="hover:text-white transition-colors">vender/rentar</div>
-                      <div className="hover:text-white transition-colors">mi propiedad</div>
-                      <div className="hover:text-white transition-colors">rápido y seguro</div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="hover:text-white transition-colors">I want to</div>
-                      <div className="hover:text-white transition-colors">sell/rent</div>
-                      <div className="hover:text-white transition-colors">my property</div>
-                      <div className="hover:text-white transition-colors">fast and secure</div>
-                    </>
-                  )}
-                </div>
-
                 {/* Expanded Features */}
                 {expandedSection === 'owner' && (
                   <div className="mt-8 p-6 bg-white/10 rounded-2xl border border-white/20 animate-fade-in">
@@ -123,6 +104,29 @@ export default function ProfileSelection({ t }) {
                     </div>
                   </div>
                 )}
+              </div>
+
+              {/* Goal Text - Outside the white box, same width */}
+              <div className="mt-6 text-center">
+                <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                  <div className="text-secondary text-2xl md:text-3xl font-bold leading-tight space-y-1">
+                    {t.hero.headline === 'Mina App' ? (
+                      <>
+                        <div className="hover:text-white transition-colors">Quiero</div>
+                        <div className="hover:text-white transition-colors">vender/rentar</div>
+                        <div className="hover:text-white transition-colors">mi propiedad</div>
+                        <div className="hover:text-white transition-colors">rápido y seguro</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="hover:text-white transition-colors">I want to</div>
+                        <div className="hover:text-white transition-colors">sell/rent</div>
+                        <div className="hover:text-white transition-colors">my property</div>
+                        <div className="hover:text-white transition-colors">fast and secure</div>
+                      </>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -179,27 +183,6 @@ export default function ProfileSelection({ t }) {
                   }
                 </p>
 
-                {/* Goal Text - Moved to bottom */}
-                <div className="text-secondary text-2xl md:text-3xl font-bold leading-tight space-y-1">
-                  {t.hero.headline === 'Mina App' ? (
-                    <>
-                      <div className="hover:text-white transition-colors">Estoy buscando</div>
-                      <div className="hover:text-white transition-colors">clientes que necesiten</div>
-                      <div className="hover:text-white transition-colors">ayuda para</div>
-                      <div className="hover:text-white transition-colors">vender/rentar su</div>
-                      <div className="hover:text-white transition-colors">propiedad</div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="hover:text-white transition-colors">I am looking for</div>
-                      <div className="hover:text-white transition-colors">clients who need</div>
-                      <div className="hover:text-white transition-colors">help to</div>
-                      <div className="hover:text-white transition-colors">sell/rent their</div>
-                      <div className="hover:text-white transition-colors">property</div>
-                    </>
-                  )}
-                </div>
-
                 {/* Expanded Features */}
                 {expandedSection === 'agent' && (
                   <div className="mt-8 p-6 bg-white/10 rounded-2xl border border-white/20 animate-fade-in">
@@ -217,19 +200,33 @@ export default function ProfileSelection({ t }) {
                   </div>
                 )}
               </div>
+
+              {/* Goal Text - Outside the white box, same width */}
+              <div className="mt-6 text-center">
+                <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+                  <div className="text-secondary text-2xl md:text-3xl font-bold leading-tight space-y-1">
+                    {t.hero.headline === 'Mina App' ? (
+                      <>
+                        <div className="hover:text-white transition-colors">Estoy buscando</div>
+                        <div className="hover:text-white transition-colors">clientes que necesiten</div>
+                        <div className="hover:text-white transition-colors">ayuda para</div>
+                        <div className="hover:text-white transition-colors">vender/rentar su</div>
+                        <div className="hover:text-white transition-colors">propiedad</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="hover:text-white transition-colors">I am looking for</div>
+                        <div className="hover:text-white transition-colors">clients who need</div>
+                        <div className="hover:text-white transition-colors">help to</div>
+                        <div className="hover:text-white transition-colors">sell/rent their</div>
+                        <div className="hover:text-white transition-colors">property</div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Footer */}
-      <div className="text-center pb-8 relative z-10">
-        <div className="flex items-center justify-center gap-4 mb-4">
-          <div className="w-8 h-1 bg-secondary rounded-full"></div>
-          <p className="text-secondary text-sm font-medium">
-            {t.hero.headline === 'Mina App' ? 'Pag. secundaria' : 'Secondary Page'}
-          </p>
-          <div className="w-8 h-1 bg-secondary rounded-full"></div>
         </div>
       </div>
     </div>

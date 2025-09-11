@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '/assets/logo-w.png';
 
 export default function Footer(props) {
@@ -9,10 +10,16 @@ export default function Footer(props) {
       </div>
       <div className="flex-1 flex flex-col md:flex-row items-center justify-center gap-6 text-sm">
         <a href="#features" className="hover:text-secondary transition">{t?.nav?.features || 'Features'}</a>
-        <a href="#" className="hover:text-secondary transition">Privacy Policy</a>
-        <a href="#" className="hover:text-secondary transition">Contact</a>
+        <Link to="/privacy-policy" className="hover:text-secondary transition">
+          {t?.hero?.headline === 'Mina App' ? 'Aviso de Privacidad' : 'Privacy Policy'}
+        </Link>
+        <a href="#footer" className="hover:text-secondary transition">
+          {t?.nav?.contact || 'Contact'}
+        </a>
       </div>
-      <div className="text-center md:text-right text-sm min-w-[200px]">&copy; {new Date().getFullYear()} Mina Real Estate. All rights reserved.</div>
+      <div className="text-center md:text-right text-sm min-w-[200px]">
+        &copy; {new Date().getFullYear()} Mina Real Estate. {t?.hero?.headline === 'Mina App' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+      </div>
     </footer>
   );
-} 
+}
