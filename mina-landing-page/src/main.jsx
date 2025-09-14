@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
-import ProfileSelectionPage from './ProfileSelectionPage.jsx'
+import OwnerOpportunitiesPage from './OwnerOpportunitiesPage.jsx'
+import AgentOpportunitiesPage from './AgentOpportunitiesPage.jsx'
 import PrivacyPolicyPage from './PrivacyPolicyPage.jsx'
 import { LanguageProvider } from './contexts/LanguageContext.jsx'
 import 'aos/dist/aos.css';
@@ -17,10 +18,10 @@ function MainApp() {
   
   return (
     <LanguageProvider>
-      <Router>
-        <Routes>
+      <Router>        <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/profile-selection" element={<ProfileSelectionPage />} />
+          <Route path="/owner-opportunities" element={<OwnerOpportunitiesPage />} />
+          <Route path="/agent-opportunities" element={<AgentOpportunitiesPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         </Routes>
       </Router>

@@ -4,6 +4,7 @@ import { useLanguage } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import RegistrationSection from './components/RegistrationSection';
 import PropertyBackground from './components/PropertyBackground';
 import FeatureHighlight from './components/FeatureHighlight';
 import Capabilities from './components/Capabilities';
@@ -16,13 +17,12 @@ import Testimonials from './components/Testimonials';
 
 export default function App() {
   const { lang, setLang } = useLanguage();
-  const t = translations[lang];
-  
-  return (
+  const t = translations[lang];  return (
     <div className="min-h-screen flex flex-col bg-minaWhite font-mina">
       <Navbar lang={lang} setLang={setLang} t={t} />
       <Hero t={t} />
       <Features t={t} />
+      <RegistrationSection t={t} />
       {/* Pull FeatureHighlight up to overlap PropertyBackground */}
       <div className="-mb-40">
         <PropertyBackground overlap={48} pushDown={180} />

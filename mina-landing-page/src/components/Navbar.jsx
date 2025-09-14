@@ -5,12 +5,10 @@ import logo from '/assets/logo-o.png';
 export default function Navbar({ lang, setLang, t }) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
-  const flag = lang === 'en' ? '🇺🇸' : '🇲🇽';
-  
-  const navLinks = [
+  const flag = lang === 'en' ? '🇺🇸' : '🇲🇽';  const navLinks = [
     { label: t.nav.home, href: '#hero' },
-    { label: t.nav.features, href: '#features' },
-    { label: lang === 'es' ? 'Perfiles' : 'Profiles', href: '/profile-selection' },
+    { label: lang === 'es' ? 'Propietarios' : 'Owners', href: '/owner-opportunities' },
+    { label: lang === 'es' ? 'Agentes' : 'Agents', href: '/agent-opportunities' },
     { label: t.nav.contact, href: '#footer' },
     { label: lang === 'es' ? 'Aviso de Privacidad' : 'Privacy Policy', href: '/privacy-policy' },
   ];
