@@ -6,6 +6,7 @@ import App from './App.jsx'
 import OwnerOpportunitiesPage from './OwnerOpportunitiesPage.jsx'
 import AgentOpportunitiesPage from './AgentOpportunitiesPage.jsx'
 import PrivacyPolicyPage from './PrivacyPolicyPage.jsx'
+import TermsAndConditionsPage from './TermsAndConditionsPage.jsx'
 import { LanguageProvider } from './contexts/LanguageContext.jsx'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -23,6 +24,7 @@ function MainApp() {
           <Route path="/owner-opportunities" element={<OwnerOpportunitiesPage />} />
           <Route path="/agent-opportunities" element={<AgentOpportunitiesPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-conditions" element={<TermsAndConditionsPage />} />
         </Routes>
       </Router>
     </LanguageProvider>

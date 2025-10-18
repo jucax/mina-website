@@ -1,4 +1,4 @@
-export default function PrivacyPolicy({ t }) {
+export default function TermsAndConditions({ t }) {
   const isSpanish = t?.hero?.headline === 'Mina App';
 
   return (
@@ -13,12 +13,12 @@ export default function PrivacyPolicy({ t }) {
       {/* Header */}
       <div className="text-center pt-16 pb-8 relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-4 font-mina">
-          {isSpanish ? 'Aviso de Privacidad' : 'Privacy Policy'}
+          {isSpanish ? 'Términos y Condiciones de Uso' : 'Terms and Conditions'}
         </h1>
         <p className="text-white/80 text-lg max-w-2xl mx-auto">
           {isSpanish 
-            ? 'Conoce cómo protegemos y utilizamos tu información personal'
-            : 'Learn how we protect and use your personal information'
+            ? 'Conoce los términos y condiciones para el uso de nuestra plataforma'
+            : 'Learn the terms and conditions for using our platform'
           }
         </p>
       </div>
@@ -28,15 +28,15 @@ export default function PrivacyPolicy({ t }) {
         <div className="max-w-6xl mx-auto">
           <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
             
-            {/* PDF Embed Container */}
+            {/* Google Docs Embed Container */}
             <div className="w-full">
               <div className="bg-white rounded-2xl p-4 shadow-2xl">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-xl font-bold text-gray-800">
-                    {isSpanish ? 'Aviso de Privacidad - Mina Real Estate' : 'Privacy Policy - Mina Real Estate'}
+                    {isSpanish ? 'Términos y Condiciones - Mina Real Estate' : 'Terms and Conditions - Mina Real Estate'}
                   </h2>
                   <a
-                    href="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
+                    href="https://docs.google.com/document/d/1fkSfkgPTLDKiXmYVdZcMUMcMNgDw6t4I/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-400 transition-colors flex items-center gap-2"
@@ -51,15 +51,15 @@ export default function PrivacyPolicy({ t }) {
                 {/* Google Docs Embed */}
                 <div className="w-full h-[800px] rounded-lg overflow-hidden">
                   <iframe
-                    src="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true&embedded=true"
+                    src="https://docs.google.com/document/d/1fkSfkgPTLDKiXmYVdZcMUMcMNgDw6t4I/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true&embedded=true"
                     width="100%"
                     height="100%"
                     className="border-0"
-                    title={isSpanish ? 'Aviso de Privacidad' : 'Privacy Policy'}
+                    title={isSpanish ? 'Términos y Condiciones' : 'Terms and Conditions'}
                   />
                 </div>
                 
-                {/* Fallback for browsers that don't support PDF embedding */}
+                {/* Fallback for browsers that don't support embedding */}
                 <div className="mt-4 text-center">
                   <p className="text-gray-600 text-sm mb-4">
                     {isSpanish 
@@ -68,7 +68,7 @@ export default function PrivacyPolicy({ t }) {
                     }
                   </p>
                   <a
-                    href="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
+                    href="https://docs.google.com/document/d/1fkSfkgPTLDKiXmYVdZcMUMcMNgDw6t4I/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-secondary hover:text-orange-400 transition-colors font-medium"
@@ -90,14 +90,14 @@ export default function PrivacyPolicy({ t }) {
               <div className="text-white/90 space-y-2 text-sm">
                 <p>
                   {isSpanish 
-                    ? '• Este documento está disponible en formato PDF para su descarga'
-                    : '• This document is available in PDF format for download'
+                    ? '• Este documento está disponible en Google Docs'
+                    : '• This document is available in Google Docs'
                   }
                 </p>
                 <p>
                   {isSpanish 
-                    ? '• Para preguntas sobre privacidad, contacta: privacy@minarealestate.com'
-                    : '• For privacy questions, contact: privacy@minarealestate.com'
+                    ? '• Para preguntas sobre términos y condiciones, contacta: legal@minarealestate.com'
+                    : '• For terms and conditions questions, contact: legal@minarealestate.com'
                   }
                 </p>
                 <p>
@@ -118,7 +118,7 @@ export default function PrivacyPolicy({ t }) {
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="w-8 h-1 bg-secondary rounded-full"></div>
           <p className="text-secondary text-sm font-medium">
-            {isSpanish ? 'Aviso de Privacidad' : 'Privacy Policy'}
+            {isSpanish ? 'Términos y Condiciones' : 'Terms and Conditions'}
           </p>
           <div className="w-8 h-1 bg-secondary rounded-full"></div>
         </div>
