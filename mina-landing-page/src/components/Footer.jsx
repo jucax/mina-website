@@ -13,6 +13,9 @@ export default function Footer(props) {
         <Link to="/privacy-policy" className="hover:text-secondary transition">
           {t?.hero?.headline === 'Mina App' ? 'Aviso de Privacidad' : 'Privacy Policy'}
         </Link>
+        <Link to="/terms-conditions" className="hover:text-secondary transition">
+          {t?.hero?.headline === 'Mina App' ? 'Términos y Condiciones' : 'Terms & Conditions'}
+        </Link>
         <a href="#footer" className="hover:text-secondary transition">
           {t?.nav?.contact || 'Contact'}
         </a>

@@ -23,7 +23,7 @@ export default function OwnerOpportunitiesPage() {
             {t.ownerOpportunities.desc}
           </p>
           <a 
-            href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" 
+            href="https://apps.apple.com/us/app/mina-real-estate/id6751931320" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-secondary text-primary font-bold px-8 py-4 rounded-full shadow-lg hover:bg-orange-400 transition text-lg mb-8"

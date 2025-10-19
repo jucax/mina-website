@@ -11,6 +11,7 @@ export default function Navbar({ lang, setLang, t }) {
     { label: lang === 'es' ? 'Agentes' : 'Agents', href: '/agent-opportunities' },
     { label: t.nav.contact, href: '#footer' },
     { label: lang === 'es' ? 'Aviso de Privacidad' : 'Privacy Policy', href: '/privacy-policy' },
+    { label: lang === 'es' ? 'Términos y Condiciones' : 'Terms & Conditions', href: '/terms-conditions' },
   ];
 
   const handleNavClick = (href) => {

@@ -39,7 +39,7 @@ export default function Hero({ t }) {
         </Link>
         <div className="flex flex-row items-center gap-12 mt-2">
           <div className="flex flex-col gap-2">
-            <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/appstore-badge.png" alt="Download on the App Store" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
+            <a href="https://apps.apple.com/us/app/mina-real-estate/id6751931320" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/appstore-badge.png" alt="Download on the App Store" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
             <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block group"><img src="/assets/googleplay-badge.png" alt="Get it on Google Play" className="w-44 md:w-52 transition-all duration-200 group-hover:shadow-[6px_6px_0_0_#ff9800] group-hover:border-r-4 group-hover:border-b-4 group-hover:border-orange-400 rounded-xl" /></a>
           </div>
           <div className="flex flex-col items-center">
