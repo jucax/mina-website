@@ -36,7 +36,7 @@ export default function PrivacyPolicy({ t }) {
                     {isSpanish ? 'Aviso de Privacidad - Mina Real Estate' : 'Privacy Policy - Mina Real Estate'}
                   </h2>
                   <a
-                    href="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
+                    href="/aviso-privacidad.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-400 transition-colors flex items-center gap-2"
@@ -48,10 +48,10 @@ export default function PrivacyPolicy({ t }) {
                   </a>
                 </div>
                 
-                {/* Google Docs Embed */}
+                {/* PDF Embed */}
                 <div className="w-full h-[800px] rounded-lg overflow-hidden">
                   <iframe
-                    src="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true&embedded=true"
+                    src="/aviso-privacidad.pdf#toolbar=1&navpanes=1&scrollbar=1"
                     width="100%"
                     height="100%"
                     className="border-0"
@@ -68,15 +68,14 @@ export default function PrivacyPolicy({ t }) {
                     }
                   </p>
                   <a
-                    href="https://docs.google.com/document/d/160xdTcb_V3jzS4zCMX_z_mzZNpY7CBYv/edit?usp=sharing&ouid=109600231197892753843&rtpof=true&sd=true"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/aviso-privacidad.pdf"
+                    download
                     className="inline-flex items-center text-secondary hover:text-orange-400 transition-colors font-medium"
                   >
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
                     </svg>
-                    {isSpanish ? 'Ver en Google Docs' : 'View in Google Docs'}
+                    {isSpanish ? 'Descargar PDF' : 'Download PDF'}
                   </a>
                 </div>
               </div>
