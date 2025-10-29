@@ -9,7 +9,7 @@ export default function CallToAction({ t }) {
           <div className="flex flex-row items-center gap-12 mb-6">
             <div className="flex flex-col gap-2">
               <a href="https://apps.apple.com/us/app/mina-real-estate/id6751931320" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/appstore-badge.png" alt={t.download.appstore} className="h-12" /></a>
-              <a href="https://expo.dev/accounts/mina-app/projects/mina_app/updates/5b54c682-a3c5-4842-a080-667f268e244e" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/googleplay-badge.png" alt={t.download.googleplay} className="h-12" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.minaios" target="_blank" rel="noopener noreferrer" className="block"><img src="/assets/googleplay-badge.png" alt={t.download.googleplay} className="h-12" /></a>
             </div>
             <div className="flex flex-col items-center">
               <img src="/assets/expo-qr.png" alt="Scan QR code to download Mina app" className="w-24 h-24 bg-white p-2 rounded-xl shadow-lg" />
